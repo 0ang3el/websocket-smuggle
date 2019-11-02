@@ -39,7 +39,7 @@ After successfull handshake client or backend can transfer data using WebSocket 
 
 ### 1. WebSocket connection reverse proxying
 
-In real web applications client and backend communicate thourgh some reverse proxy. Currently most of web servers, load balancer, http proxies allow to proxy WebSocket traffic.
+In real web applications client and backend communicate through some reverse proxy. Currently most of web servers, load balancer, http proxies allow to proxy WebSocket traffic.
 
 Let's observe how WebSocket communication should be done in case reverse proxy is envolved. Below an ideal picture is described.
 
@@ -47,7 +47,7 @@ On the first step client sends Upgrade request to the reverse proxy. Proxy check
 
 ![](img/1-1.png)
 
-On the second step backend answers reverse proxy with HTTP response that has status code `101`. Response also has `Upgrade` and `Sec-WebSocket-Accept` headers. Reverse proxy should check that that backend indeed is ready to establish WebSocket connection by checking status code and other headers. If everyhing is correct reverse proxy translates response from backend to the client.
+On the second step backend answers reverse proxy with HTTP response that has status code `101`. Response also has `Upgrade` and `Sec-WebSocket-Accept` headers. Reverse proxy should check that backend indeed is ready to establish WebSocket connection by checking status code and other headers. If everyhing is correct reverse proxy translates response from backend to the client.
 
 ![](img/1-2.png)
 

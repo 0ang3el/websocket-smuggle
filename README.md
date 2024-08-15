@@ -57,7 +57,7 @@ On the third step proxy doesn't close TCP or TLS connection between client and b
 
 ### 2. Smuggling techniques
 
-In reality, however, reverse proxies can behave differently and do not adhere fully to RFC 6445. This leads to smuggling attacks.
+In reality, however, reverse proxies can behave differently and do not adhere fully to [RFC 6455](https://tools.ietf.org/html/rfc6455). This leads to smuggling attacks.
 
 ### 2.1 Scenario 1
 
